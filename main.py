@@ -369,3 +369,11 @@ Responda diretamente à solicitação.
             status_code=500,
             detail=f"Erro ao consultar a IA: {str(e)}"
         )
+
+
+@app.get("/api/v1/teste")
+def teste():
+    return {
+        "status": "ok",
+        "mensagem": "AutoIntel backend funcionando"
+    }
